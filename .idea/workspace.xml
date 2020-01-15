@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/create-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/create-adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579102383522</updated>
-      <workItem from="1579102385553" duration="4502000" />
+      <workItem from="1579102385553" duration="4561000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1579105928532</created>
@@ -101,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579105989384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="npm publish 1.0.0">
+      <created>1579106944797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579106944797</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +114,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="리팩토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="리팩토링" />
+    <MESSAGE value="npm publish 1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm publish 1.0.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -121,10 +125,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="189" width="800" height="671" key="#ESLint/0.0.1920.1080@0.0.1920.1080" timestamp="1579106544944" />
-    <state x="535" y="110" width="839" height="829" key="CommitChangelistDialog2" timestamp="1579106921950">
+    <state x="535" y="110" width="839" height="829" key="CommitChangelistDialog2" timestamp="1579106944586">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="535" y="110" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579106921950" />
+    <state x="535" y="110" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579106944586" />
     <state width="1893" height="293" key="GridCell.Tab.0.bottom" timestamp="1579106923404">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -193,9 +197,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579106524830" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1579105991049">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1579106947779">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579105991049" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579106947779" />
   </component>
 </project>

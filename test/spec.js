@@ -8,13 +8,13 @@ const adapter = require('../lib');
 const app = new Koa();
 const router = new Router();
 
-function signUp({username, password}) {
+function signUp({ username, password }) {
   if (!username || !password) throw new adapter.Forbidden();
 
   // Business logic
   // ...
 
-  return {message: 'success'};
+  return { message: 'success' };
 }
 
 router.post('/user', adapter.create(200, signUp));
