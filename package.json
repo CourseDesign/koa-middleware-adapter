@@ -1,0 +1,26 @@
+{
+  "name": "koa-middleware-adapter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "dependencies": {
+    "koa-params-extractor": "^1.0.3",
+    "simple-http-adapter": "^1.1.3"
+  },
+  "devDependencies": {
+    "axios": "^0.19.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
