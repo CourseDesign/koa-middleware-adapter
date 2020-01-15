@@ -1,18 +1,27 @@
 {
   "name": "koa-middleware-adapter",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Normal function, promise can be used as koa middleware",
   "main": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "koa",
+    "middleware",
+    "adapter"
+  ],
+  "author": "Si-Yual Park",
   "license": "MIT",
   "files": [
     "lib",
     "test"
   ],
+  "homepage": "https://github.com/kdPark0723/koa-middleware-adapter",
+  "bugs": {
+    "url": "https://github.com/kdPark0723/koa-middleware-adapter/issues",
+    "email": "kdpark023@gmail.com"
+  },
   "dependencies": {
     "koa-params-extractor": "^1.0.3",
     "simple-http-adapter": "^1.1.3"
@@ -21,6 +30,9 @@
     "axios": "^0.19.1",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
   }
 }

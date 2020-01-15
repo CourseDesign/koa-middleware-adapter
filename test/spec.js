@@ -26,31 +26,33 @@ app.use(router.allowedMethods());
 app.listen(3000);
 
 const localhost = axios.create({
-  baseURL: 'http://localhost:3000'
+  baseURL: 'http://localhost:3000',
 });
 
 async function test() {
-  let success = await localhost.post('/user', {
+  const success = await localhost.post('/user', {
     username: 'Test User',
-    password: 'test'
+    password: 'test',
   });
 
+  // eslint-disable-next-line no-console
   console.log(success);
 
   const fail = await localhost.post('/user', {
     username: 'Test User',
   });
 
+  // eslint-disable-next-line no-console
   console.log(fail);
 }
 
 test().then(
   (res) => {
-    console.log(res)
+    // eslint-disable-next-line no-console
+    console.log(res);
   },
   (err) => {
-    console.log(err)
-  }
+    // eslint-disable-next-line no-console
+    console.log(err);
+  },
 );
-
-
