@@ -1,11 +1,12 @@
 const Koa = require('koa');
 const Router = require('koa-router');
 const axios = require('axios');
+const bodyParser = require('koa-bodyparser');
+
 const adapter = require('../lib');
 
 const app = new Koa();
 const router = new Router();
-const bodyParser = require('koa-bodyparser');
 
 function signUp({username, password}) {
   if (!username || !password) throw new adapter.Forbidden();
