@@ -39,7 +39,7 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(successStatusCode, func, handlers);
+adapter.create(successStatusCode, func, options);
 ```
 
 ​    
