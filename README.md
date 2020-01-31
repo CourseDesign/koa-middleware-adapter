@@ -39,8 +39,40 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(successStatusCode, func, handlers);
+adapter.create(successStatusCode, func, options = { property, bindContext, handlers });
 ```
+
+​        
+
+### Parameter
+```js
+class Property {
+  constructor(name, where) {
+    this.name = name;
+
+    if (where) this.where = where;
+    else this.where = new Where(true, true, true);
+  }
+}
+
+class Where {
+  constructor(koaRequest, nodeRequest, global) {
+    this.koaRequest = koaRequest;
+    this.nodeRequest = nodeRequest;
+    this.global = global;
+  }
+}
+```
+
+- This option is a property of the argument to extract, which defines the name and location of the argument to extract.
+-  The default value is params, query, header, body defined
+
+​    
+
+### Bind Context
+
+- This option determines whether the response is appended to ctx, if true, then bound to ctx instead of binding to response. 
+- The default value is false
 
 ​    
 
