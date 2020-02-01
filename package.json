@@ -1,6 +1,6 @@
 {
   "name": "koa-middleware-adapter",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Normal function, promise can be used as koa middleware",
   "main": "lib",
   "scripts": {

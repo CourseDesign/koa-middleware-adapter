@@ -51,12 +51,13 @@ class Property {
     this.name = name;
 
     if (where) this.where = where;
-    else this.where = new Where(true, true, true);
+    else this.where = new Where(false, true, true, true);
   }
 }
 
 class Where {
-  constructor(koaRequest, nodeRequest, global) {
+  constructor(destructuring, koaRequest, nodeRequest, global) {
+    this.destructuring = destructuring;
     this.koaRequest = koaRequest;
     this.nodeRequest = nodeRequest;
     this.global = global;
