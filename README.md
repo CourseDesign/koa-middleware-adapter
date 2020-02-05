@@ -39,7 +39,7 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(successStatusCode, func, options = { statusCode, property, bindContext, handlers });
+adapter.create(successStatusCode, func, options = { statusCode, property, bind, handlers });
 ```
 
 ​    
@@ -77,17 +77,19 @@ class Where {
 
 ​    
 
-### Bind Context
+### Bind
 
-- This option determines whether the response is appended to ctx, if true, then bound to ctx instead of binding to response. 
-- The default value is false
+- This option specifies where the response will be bind to ctx.
+- The default value is `response`, which binds the request value to the body of the response.
+-  Another predefined option is destructuring, which destructuring the response and assign it with ctx.
+- The other option sets the response to `ctx[bind]`.
 
 ​    
 
 ### Handlers
 
 ```js
-const handlers = { errorHandel, requestParamsExtract, responseMapping };
+const handlers = { errorHandel, requestParamsExtract, responseMapping, responseBind };
 ```
 
 ​    
@@ -109,3 +111,12 @@ function requestParamsExtract(request) {}
 ```js
 function responseMapping(response, successStatusCode) {}
 ```
+
+#### Response Bind
+
+```js
+function responseBind(ctx, bind, response) {
+  return false || true;
+}
+```
+
