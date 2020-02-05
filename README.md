@@ -24,7 +24,7 @@ function signUp({ username, password }) {
   return { message: 'success' };
 }
 
-router.post('/user', adapter.create(200, signUp));
+router.post('/user', adapter.create(signUp, { statusCode: 200 }));
 ```
 
 ```shell
@@ -39,12 +39,19 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(successStatusCode, func, options = { property, bindContext, handlers });
+adapter.create(successStatusCode, func, options = { statusCode, property, bindContext, handlers });
 ```
 
-​        
+​    
+
+### Status Code
+
+- Return status code if function finish success
+
+​    
 
 ### Parameter
+
 ```js
 class Property {
   constructor(name, where) {
