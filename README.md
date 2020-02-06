@@ -39,7 +39,7 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(successStatusCode, func, options = { statusCode, property, bind, handlers });
+adapter.create(func, options = { statusCode, property, bind, handlers });
 ```
 
 ​    
@@ -79,10 +79,19 @@ class Where {
 
 ### Bind
 
+```js
+function Bind({ name, where, options }) {
+  this.name = name;
+  this.where = where;
+  this.options = options;
+}
+```
+
 - This option specifies where the response will be bind to ctx.
 - The default value is `response`, which binds the request value to the body of the response.
--  Another predefined option is destructuring, which destructuring the response and assign it with ctx.
-- The other option sets the response to `ctx[bind]`.
+-  Another predefined option is `context`, which binds the request value to the ctx.
+-  Another predefined option is `cookies`, which binds the request value to the cookies.
+- The other option sets the response to `ctx[bind.name]`.
 
 ​    
 
