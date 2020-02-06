@@ -1,6 +1,6 @@
 {
   "name": "koa-middleware-adapter",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "description": "Normal function, promise can be used as koa middleware",
   "main": "lib",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "koa-params-extractor": "^3.4.1",
-    "simple-http-adapter": "^1.2.3"
+    "simple-http-adapter": "^1.2.4"
   },
   "devDependencies": {
     "axios": "^0.19.1",
