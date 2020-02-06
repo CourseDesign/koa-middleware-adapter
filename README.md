@@ -56,7 +56,7 @@ adapter.create(func, options = { statusCode, parameters, bind, handlers });
 function Parameter(
   where = new Where(null, true, true, true),
   name = null,
-  complete = true
+  options = { complete: true, as: null }
 ) {
   this.where = where;
   this.name = name;
