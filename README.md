@@ -39,7 +39,7 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(func, options = { statusCode, property, bind, handlers });
+adapter.create(func, options = { statusCode, parameters, bind, handlers });
 ```
 
 ​    
@@ -50,30 +50,24 @@ adapter.create(func, options = { statusCode, property, bind, handlers });
 
 ​    
 
-### Parameter
+### Parameters
 
 ```js
-class Property {
-  constructor(name, where) {
-    this.name = name;
-
-    if (where) this.where = where;
-    else this.where = new Where(false, true, true, true);
-  }
+function Parameter(name, where) {
+  this.name = name;
+  this.where = where || new Where(null, true, true, true);
 }
 
-class Where {
-  constructor(destructuring, koaRequest, nodeRequest, global) {
-    this.destructuring = destructuring;
-    this.koaRequest = koaRequest;
-    this.nodeRequest = nodeRequest;
-    this.global = global;
-  }
+function Where(name, koaRequest, nodeRequest, global) {
+  this.name = name;
+  this.koaRequest = koaRequest;
+  this.nodeRequest = nodeRequest;
+  this.global = global;
 }
 ```
 
 - This option is a property of the argument to extract, which defines the name and location of the argument to extract.
--  The default value is params, query, header, body defined
+-  The default value is params, query, header, body, cookies defined
 
 ​    
 
