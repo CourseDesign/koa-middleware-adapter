@@ -53,9 +53,14 @@ adapter.create(func, options = { statusCode, parameters, bind, handlers });
 ### Parameters
 
 ```js
-function Parameter(name, where) {
+function Parameter(
+  where = new Where(null, true, true, true),
+  name = null,
+  complete = true
+) {
+  this.where = where;
   this.name = name;
-  this.where = where || new Where(null, true, true, true);
+  this.complete = complete;
 }
 
 function Where(name, koaRequest, nodeRequest, global) {
