@@ -55,11 +55,11 @@ adapter.create(func, options = { statusCode, parameters, bind, handlers });
 ```js
 function Parameter(
   where = new Where(null, true, true, true),
-  options = { name: null, complete: false, as: null }
+  options = { name: null, combineLevel: 0, as: null }
 ) {
   this.where = where;
   this.name = options.name;
-  this.complete = options.complete;
+  this.combineLevel = options.combineLevel;
   this.as = options.as;
 }
 
@@ -87,7 +87,8 @@ function Bind({ name, where, options }) {
 ```
 
 - This option specifies where the response will be bind to ctx.
-- The default value is `response`, which binds the request value to the body of the response.
+- The default value is `body`, which binds the request value to the body of the response.
+- Another predefined option is `headers`, which binds the request value to the headers of the response.
 -  Another predefined option is `context`, which binds the request value to the ctx.
 -  Another predefined option is `cookies`, which binds the request value to the cookies.
 - The other option sets the response to `ctx[bind.name]`.
