@@ -17,7 +17,7 @@ function signUp({ username, password }) {
   return { message: 'success' };
 }
 
-router.post('/user', adapter.create(signUp, { statusCode: 200, bindContext: true }));
+router.post('/user', adapter.create(signUp, { statusCode: 200, bind: { where: 'context' } }));
 
 app.use(bodyParser());
 app.use(router.routes());
