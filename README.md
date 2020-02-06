@@ -55,12 +55,12 @@ adapter.create(func, options = { statusCode, parameters, bind, handlers });
 ```js
 function Parameter(
   where = new Where(null, true, true, true),
-  name = null,
-  options = { complete: true, as: null }
+  options = { name: null, complete: false, as: null }
 ) {
   this.where = where;
-  this.name = name;
-  this.complete = complete;
+  this.name = options.name;
+  this.complete = options.complete;
+  this.as = options.as;
 }
 
 function Where(name, koaRequest, nodeRequest, global) {
