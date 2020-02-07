@@ -28,8 +28,8 @@ router.post('/user', adapter.create(signUp, { statusCode: 200 }));
 ```
 
 ```shell
-Response { statusCode: 403, headers: {}, body: { message: 'Forbidden'} }
-Response { statusCode: 200, headers: {}, body: { message: 'success'} }
+Response { statusCode: 403, body: { message: 'Forbidden'} }
+Response { statusCode: 200, body: { message: 'success'} }
 ```
 
 ​    
@@ -39,16 +39,10 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(func, options = { statusCode, parameters, bind:options, handlers });
+adapter.create(func, { parameters, response, handlers, statusCode });
 ```
 
-​    
-
-### Status Code
-
-- Return status code if function finish success
-
-​    
+​        
 
 ### Parameters
 
@@ -63,16 +57,29 @@ function Parameter(
   this.as = options.as;
 }
 
-function Where(name, koaRequest, nodeRequest, global) {
+function Where(name, koaRequest, nodeRequest, context) {
   this.name = name;
   this.koaRequest = koaRequest;
   this.nodeRequest = nodeRequest;
-  this.global = global;
+  this.context = context;
 }
 ```
 
-- This option is a property of the argument to extract, which defines the name and location of the argument to extract.
--  The default value is params, query, header, body, cookies defined
+- Parameters defines the information of the parameters to pass.
+  - `where` defines where to find the parameter.
+  - `name` is the name of the parameter.
+    - If `name` exists, the same name is taken from the parameter's location.
+  - `combineLevel` is the level at which the imported arguments are to be combined.
+    - `0` means the imported parameter is the parameter to pass.
+    - `1` means the imported parameter is a child of the parameter to pass.
+  - `as` specifies a name when passing a parameter.
+- Where defines where to find the parameter.
+  -  `name` is the name of the location from which to retrieve the parameter.
+  -  `koaRequest` means to find the location of a parameter in `ctx.request`.
+  -  `nodeRequest` means to find the location of a parameter in `ctx.req`.
+  -  `context` means to find the location of a parameter in `ctx`.
+
+- The default value is params, query, header, body, cookies defined.
 
 ​    
 
@@ -98,34 +105,26 @@ function Response({ name, where, options }) {
 ### Handlers
 
 ```js
-const handlers = { errorHandler, parameterExtractionHandler, responseMapping, responseBind };
+const handlers = { parameterExtractionHandler, responseInjectionHandler, errorHandler };
 ```
 
 ​    
 
-#### Error Handel
+#### Parameter Extraction Handler
 
 ```js
-function errorHandler(error) {}
+function parameterExtractionHandler(ctx, parameters) {}
 ```
 
-#### Request Params Extract
+#### Response Injection Handler
 
 ```js
-function parameterExtractionHandler(request) {}
+function responseInjectionHandler(ctx, result, options = {statusCode, response}) {}
 ```
 
-#### Response Mapping
+#### Error Handler
 
 ```js
-function responseMapping(response, successStatusCode) {}
-```
-
-#### Response Response
-
-```js
-function responseBind(ctx, bind, response) {
-  return false || true;
-}
+function errorHandler(ctx, error) {}
 ```
 
