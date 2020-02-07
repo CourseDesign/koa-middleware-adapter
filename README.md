@@ -39,7 +39,7 @@ Response { statusCode: 200, headers: {}, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(func, options = { statusCode, parameters, bind, handlers });
+adapter.create(func, options = { statusCode, parameters, bind:options, handlers });
 ```
 
 ​    
@@ -76,10 +76,10 @@ function Where(name, koaRequest, nodeRequest, global) {
 
 ​    
 
-### Bind
+### Response
 
 ```js
-function Bind({ name, where, options }) {
+function Response({ name, where, options }) {
   this.name = name;
   this.where = where;
   this.options = options;
@@ -98,7 +98,7 @@ function Bind({ name, where, options }) {
 ### Handlers
 
 ```js
-const handlers = { errorHandler, requestParamsExtract, responseMapping, responseBind };
+const handlers = { errorHandler, parameterExtractionHandler, responseMapping, responseBind };
 ```
 
 ​    
@@ -112,7 +112,7 @@ function errorHandler(error) {}
 #### Request Params Extract
 
 ```js
-function requestParamsExtract(request) {}
+function parameterExtractionHandler(request) {}
 ```
 
 #### Response Mapping
@@ -121,7 +121,7 @@ function requestParamsExtract(request) {}
 function responseMapping(response, successStatusCode) {}
 ```
 
-#### Response Bind
+#### Response Response
 
 ```js
 function responseBind(ctx, bind, response) {
