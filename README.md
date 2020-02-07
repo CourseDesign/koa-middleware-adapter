@@ -98,7 +98,7 @@ function Bind({ name, where, options }) {
 ### Handlers
 
 ```js
-const handlers = { errorHandel, requestParamsExtract, responseMapping, responseBind };
+const handlers = { errorHandler, requestParamsExtract, responseMapping, responseBind };
 ```
 
 ​    
@@ -106,7 +106,7 @@ const handlers = { errorHandel, requestParamsExtract, responseMapping, responseB
 #### Error Handel
 
 ```js
-function errorHandel(error) {}
+function errorHandler(error) {}
 ```
 
 #### Request Params Extract
