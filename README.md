@@ -1,6 +1,6 @@
-# Koa Middleware Adapter
+# Koa Middleware Adapter ![](https://img.shields.io/npm/dm/koa-middleware-adapter.png?style=flat-square)
 
-**Normal function, promise can be used as koa middleware**.
+**Functions and promises can be used as middleware in koa.**
 
 ​    
 
