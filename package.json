@@ -1,7 +1,7 @@
 {
   "name": "koa-middleware-adapter",
-  "version": "4.0.4",
-  "description": "Normal function, promise can be used as koa middleware",
+  "version": "4.0.5",
+  "description": "Functions and promises can be used as middleware in koa.",
   "main": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
