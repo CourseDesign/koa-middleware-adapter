@@ -1,4 +1,6 @@
-# Koa Middleware Adapter ![](https://img.shields.io/npm/dm/koa-middleware-adapter.png?style=flat-square)
+# Koa Middleware Adapter
+
+![](https://img.shields.io/npm/dm/koa-middleware-adapter.png?style=flat-square)
 
 **Functions and promises can be used as middleware in koa.**
 
@@ -67,6 +69,8 @@ function Where(name, koaRequest, nodeRequest, context) {
 
 - Parameters defines the information of the parameters to pass.
   - `where` defines where to find the parameter.
+    - If `where` is not an instance of `Where`, the parameter is `where` .
+    - If `where` is an instance of `Where`, the parameter is found in `ctx` with information from `where`.
   - `name` is the name of the parameter.
     - If `name` exists, the same name is taken from the parameter's location.
   - `combineLevel` is the level at which the imported arguments are to be combined.
@@ -74,10 +78,10 @@ function Where(name, koaRequest, nodeRequest, context) {
     - `1` means the imported parameter is a child of the parameter to pass.
   - `as` specifies a name when passing a parameter.
 - Where defines where to find the parameter.
-  -  `name` is the name of the location from which to retrieve the parameter.
-  -  `koaRequest` means to find the location of a parameter in `ctx.request`.
-  -  `nodeRequest` means to find the location of a parameter in `ctx.req`.
-  -  `context` means to find the location of a parameter in `ctx`.
+  - `name` is the name of the location from which to retrieve the parameter.
+  - `koaRequest` means to find the location of a parameter in `ctx.request`.
+  - `nodeRequest` means to find the location of a parameter in `ctx.req`.
+  - `context` means to find the location of a parameter in `ctx`.
 
 - The default value is params, query, header, body, cookies defined.
 
