@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/middleware/create-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/middleware/create-middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,9 @@
       <workItem from="1581233209721" duration="1933000" />
       <workItem from="1581236525725" duration="75000" />
       <workItem from="1581242009010" duration="250000" />
-      <workItem from="1581242848535" duration="413000" />
+      <workItem from="1581242848535" duration="671000" />
+      <workItem from="1581244223586" duration="161000" />
+      <workItem from="1581263685884" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1579105928532</created>
@@ -426,14 +429,20 @@
       <option name="project" value="LOCAL" />
       <updated>1581236548105</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="4.1.2">
+      <created>1581243267567</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1581243267567</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="npm publish 2.3.0" />
     <MESSAGE value="npm publish 3.0.0" />
     <MESSAGE value="npm publish 3.0.1" />
     <MESSAGE value="npm publish 3.1.0" />
@@ -458,7 +467,8 @@
     <MESSAGE value="4.0.5" />
     <MESSAGE value="4.1.0" />
     <MESSAGE value="4.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.1.1" />
+    <MESSAGE value="4.1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.1.2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="671" key="#ESLint" timestamp="1579106544944">
@@ -473,30 +483,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="490" y="69" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581236547659">
+    <state x="490" y="69" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581243266661">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="490" y="69" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581236547659" />
+    <state x="490" y="69" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581243266661" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580436874777" />
-    <state width="1893" height="293" key="GridCell.Tab.0.bottom" timestamp="1581243228942">
+    <state width="1893" height="293" key="GridCell.Tab.0.bottom" timestamp="1581263868169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581243228942" />
-    <state width="1893" height="293" key="GridCell.Tab.0.center" timestamp="1581243228941">
+    <state width="1893" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581263868169" />
+    <state width="1893" height="293" key="GridCell.Tab.0.center" timestamp="1581263868169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581243228941" />
-    <state width="1893" height="293" key="GridCell.Tab.0.left" timestamp="1581243228941">
+    <state width="1893" height="293" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581263868169" />
+    <state width="1893" height="293" key="GridCell.Tab.0.left" timestamp="1581263868168">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581243228941" />
-    <state width="1893" height="293" key="GridCell.Tab.0.right" timestamp="1581243228942">
+    <state width="1893" height="293" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581263868168" />
+    <state width="1893" height="293" key="GridCell.Tab.0.right" timestamp="1581263868169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581243228942" />
+    <state width="1893" height="293" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581263868169" />
     <state width="1893" height="361" key="GridCell.Tab.1.bottom" timestamp="1580916337844">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -553,10 +563,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581235138710" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581236549820">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581243269047">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581236549820" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581243269047" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
