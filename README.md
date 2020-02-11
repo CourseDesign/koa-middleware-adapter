@@ -51,12 +51,13 @@ adapter.create(func, { parameters, response, handlers, statusCode });
 ```js
 function Parameter(
   where = new Where(null, true, true, true),
-  options = { name: null, combineLevel: 0, as: null }
+  options = { name: null, combineLevel: 0, as: null, index: undefined }
 ) {
   this.where = where;
   this.name = options.name;
   this.combineLevel = options.combineLevel;
   this.as = options.as;
+  this.index = options.index;
 }
 
 function Where(name, koaRequest, nodeRequest, context) {
