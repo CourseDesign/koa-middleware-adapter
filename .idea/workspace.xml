@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/extract/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/inject/index.js" afterDir="false" />
+    <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/extract/extract-many.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-many.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +161,8 @@
       <workItem from="1581476489377" duration="598000" />
       <workItem from="1581480441436" duration="9000" />
       <workItem from="1581525291836" duration="80000" />
-      <workItem from="1581574418066" duration="11230000" />
-    </task>
-    <task id="LOCAL-00010" summary="npm publish 2.0.5">
-      <created>1580802189912</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1580802189912</updated>
+      <workItem from="1581574418066" duration="11685000" />
+      <workItem from="1581586175924" duration="96000" />
     </task>
     <task id="LOCAL-00011" summary="npm publish 2.0.6">
       <created>1580887791476</created>
@@ -508,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581585514758</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="refactoring">
+      <created>1581585665838</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1581585665838</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,30 +560,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581585514675">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581586224370">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585514675" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581586224370" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580436874777" />
-    <state width="1893" height="293" key="GridCell.Tab.0.bottom" timestamp="1581578360271">
+    <state width="1893" height="293" key="GridCell.Tab.0.bottom" timestamp="1581586114516">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581578360271" />
-    <state width="1893" height="293" key="GridCell.Tab.0.center" timestamp="1581578360269">
+    <state width="1893" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581586114516" />
+    <state width="1893" height="293" key="GridCell.Tab.0.center" timestamp="1581586114513">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581578360269" />
-    <state width="1893" height="293" key="GridCell.Tab.0.left" timestamp="1581578360268">
+    <state width="1893" height="293" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581586114513" />
+    <state width="1893" height="293" key="GridCell.Tab.0.left" timestamp="1581586114511">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581578360268" />
-    <state width="1893" height="293" key="GridCell.Tab.0.right" timestamp="1581578360270">
+    <state width="1893" height="293" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581586114511" />
+    <state width="1893" height="293" key="GridCell.Tab.0.right" timestamp="1581586114515">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="293" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581578360270" />
+    <state width="1893" height="293" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581586114515" />
     <state width="1893" height="361" key="GridCell.Tab.1.bottom" timestamp="1580916337844">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -641,10 +640,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581585515761">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581585666989">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585515761" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585666989" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -653,6 +652,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="577" y="303" width="756" height="444" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580437373298" />
+    <state x="624" y="236" key="run.anything.popup" timestamp="1581585868958">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="624" y="236" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581585868958" />
     <state x="623" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1581577184115">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
