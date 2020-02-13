@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/extract/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/inject/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
     </list>
@@ -161,21 +163,7 @@
       <workItem from="1581476489377" duration="598000" />
       <workItem from="1581480441436" duration="9000" />
       <workItem from="1581525291836" duration="80000" />
-      <workItem from="1581574418066" duration="10988000" />
-    </task>
-    <task id="LOCAL-00008" summary="npm publish 2.0.3">
-      <created>1580537112908</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1580537112908</updated>
-    </task>
-    <task id="LOCAL-00009" summary="npm publish 2.0.4">
-      <created>1580537725254</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1580537725254</updated>
+      <workItem from="1581574418066" duration="11230000" />
     </task>
     <task id="LOCAL-00010" summary="npm publish 2.0.5">
       <created>1580802189912</created>
@@ -506,7 +494,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581585269979</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="refactoring">
+      <created>1581585429885</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1581585429885</updated>
+    </task>
+    <task id="LOCAL-00058" summary="refactoring">
+      <created>1581585514758</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1581585514758</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +521,6 @@
       <path value="$PROJECT_DIR$/lib/params-extractor" />
       <path value="$PROJECT_DIR$/lib/response-injection" />
     </ignored-roots>
-    <MESSAGE value="npm publish 3.5.1" />
     <MESSAGE value="npm publish 3.5.2" />
     <MESSAGE value="npm publish 3.5.3" />
     <MESSAGE value="npm publish 3.5.4" />
@@ -544,7 +545,8 @@
     <MESSAGE value="npm publish 4.3.0" />
     <MESSAGE value="change spec" />
     <MESSAGE value="fix error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="682" key="#ESLint" timestamp="1581584771979">
@@ -559,10 +561,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581585429789">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581585514675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585429789" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585514675" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -639,10 +641,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581585430921">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581585515761">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585430921" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581585515761" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
