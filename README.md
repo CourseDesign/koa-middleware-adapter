@@ -111,7 +111,7 @@ function Response({ name, where, options }) {
 ### Handlers
 
 ```js
-const handlers = { parameterExtractionHandler, responseInjectionHandler, errorHandler };
+const handlers = { extractParameterHandler, injectResponseHandler, errorHandler };
 ```
 
 ​    
@@ -119,13 +119,13 @@ const handlers = { parameterExtractionHandler, responseInjectionHandler, errorHa
 #### Parameter Extraction Handler
 
 ```js
-function parameterExtractionHandler(ctx, parameters) {}
+function extractParameterHandler(ctx, parameters) {}
 ```
 
 #### Response Injection Handler
 
 ```js
-function responseInjectionHandler(ctx, result, options = {statusCode, response}) {}
+function injectResponseHandler(ctx, result, options = {statusCode, response}) {}
 ```
 
 #### Error Handler

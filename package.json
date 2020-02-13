@@ -1,6 +1,6 @@
 {
   "name": "koa-middleware-adapter",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "description": "Functions and promises can be used as middleware in koa.",
   "main": "lib",
   "scripts": {
@@ -22,8 +22,10 @@
     "url": "https://github.com/kdPark0723/koa-middleware-adapter/issues",
     "email": "kdpark023@gmail.com"
   },
-  "dependencies": {
-    "koa-params-extractor": "^3.9.7",
-    "koa-response-injection": "^1.1.0"
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-node": "^0.3.3",
+    "eslint-plugin-import": "^2.20.1"
   }
 }
