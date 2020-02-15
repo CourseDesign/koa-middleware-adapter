@@ -22,6 +22,13 @@ app.listen(port, () => {
 
 ​    
 
+## Document
+
+- [example](https://github.com/kdPark0723/koa-middleware-adapter/example)
+- [source](https://github.com/kdPark0723/koa-middleware-adapter)
+
+​    
+
 
 ## Install
 
@@ -34,34 +41,120 @@ $ npm i koa-middleware-adapter
 ## Usage
 
 ```js
-function signUp({ username, password }) {
-  if (!username || !password) throw new adapter.Forbidden();
+const Koa = require('koa');
+const Router = require('koa-router');
+const bodyParser = require('koa-bodyparser');
+const adapter = require('koa-middleware-adapter');
 
-  // Business logic
-  // ...
+const UserDao = require('./userDao');
 
-  return { message: 'success' };
+const userDao = new UserDao();
+
+async function findUserInfo(userId, userDao) {
+  const user = await userDao.findById(Number(userId));
+  if (!user) throw new adapter.NotFound('User Not Found');
+
+  return user;
 }
 
-router.post('/user', adapter.create(signUp));
+async function createUserInfo(user, userDao) {
+  await userDao.insert(user);
+  return user;
+}
+
+const findUserMiddleware = adapter.create(findUserInfo, {
+  status: 200,
+  parameters: [
+    new adapter.parameter.Parameter(adapter.parameter.where.params, { name: 'userId', index: 0 }),
+    new adapter.parameter.Parameter(userDao, { index: 1 }),
+  ],
+});
+
+const findUserInContextMiddleware = adapter.create(findUserInfo, {
+  status: 200,
+  parameters: [
+    new adapter.parameter.Parameter(new adapter.parameter.where.Where('user', true), { name: 'id', index: 0 }),
+    new adapter.parameter.Parameter(userDao, { index: 1 }),
+  ],
+});
+
+const createUserMiddleware = adapter.create(createUserInfo, {
+  status: null,
+  parameters: [
+    new adapter.parameter.Parameter(adapter.parameter.where.body, { index: 0 }),
+    new adapter.parameter.Parameter(userDao, { index: 1 }),
+  ],
+  response: new adapter.response.Response(adapter.response.where.context, { name: 'user' }),
+});
+
+const router = new Router();
+
+router.get('/users/:userId', findUserMiddleware);
+router.post('/user', createUserMiddleware, findUserInContextMiddleware);
+
+const app = new Koa();
+
+app.use(bodyParser());
+
+app.use(router.routes());
+app.use(router.allowedMethods());
+
+const port = 4000;
+app.listen(port, () => {
+  console.log(`server is listening to port ${port}`);
+});
 ```
 
-```shell
-Response { statusCode: 403, body: { message: 'Forbidden'} }
-Response { statusCode: 200, body: { message: 'success'} }
-```
+### Request
+
+- POST http://localhost:4000/user
+
+  ```json
+  {
+  	"username": "test",
+  	"password": "test"
+  }
+  ```
+
+#### Response
+
+- status: 200
+
+  ```json
+  {
+      "username": "test",
+      "password": "test",
+      "id": 1
+  }
+  ```
+
+### Request
+
+- GET http://localhost:4000/users/0
+
+#### Response
+
+- status: 200
+
+  ```json
+  {
+      "username": "test",
+      "password": "test",
+      "id": 1
+  }
+  ```
 
 ​    
 
 ## Spec
 
-### Convert
+### Adapt
 
 ```js
 adapter.create(listener, { status, type, parameters, response, handlers });
 ```
 
-​        
+​    
 
 ### Parameters
 
@@ -90,7 +183,7 @@ function Parameter(
   - `as` specifies a name when passing a parameter.
   - `index` is index of the parameter to pass.
 
-- The default value is params, query, header, body, cookies defined.
+- The default value is `params`, `query`, `header`, `body`, `cookies` defined.
 
 ​    
 
@@ -107,12 +200,13 @@ function Response(
 }
 ```
 
-- This option specifies where the response will be bind to ctx.
+- The response determines how to handle the lister's response
+  - `where` defines where to bind the response.
+    - If `where` is not an instance of `Where`, the response is injected in `where` .
+    - If `where` is an instance of `Where`, the position is found in `ctx` with information from `where` and inject the response.
+  - `name` is the name of the response.
+    - If `name` exists, the same name is defined in the position to inject the response.
 - The default value is `body`, which binds the request value to the body of the response.
-- Another predefined option is `headers`, which binds the request value to the headers of the response.
--  Another predefined option is `context`, which binds the request value to the ctx.
--  Another predefined option is `cookies`, which binds the request value to the cookies.
-- The other option sets the response to `ctx[bind.name]`.
 
 ​    
 
@@ -130,19 +224,18 @@ function Where(name, context, koa, node, setterAndGetter) {
 
 - Where defines where to find the parameter.
   - `name` is the name of the location from which to retrieve the parameter.
-  - `koaRequest` means to find the location of a parameter in `ctx.request`.
-  - `nodeRequest` means to find the location of a parameter in `ctx.req`.
   - `context` means to find the location of a parameter in `ctx`.
-
-    
+  - `koa` means to find the location of a parameter in `ctx.request`.
+  - `node` means to find the location of a parameter in `ctx.req`.
+- `setterAndGetter` means to use `set` or `get` method to extract or inject object, if `set` or `get` method is exist.
+  
+  
 
 ### Handlers
 
 ```js
 const handlers = { extractParameterHandler, injectResponseHandler, errorHandler };
 ```
-
-​    
 
 #### Extract Parameter Handler
 
