@@ -34,6 +34,8 @@ const findUserInContextMiddleware = adapter.create(findUserInfo, {
     new adapter.parameter.Parameter(new adapter.parameter.where.Where('user', true), { name: 'id', index: 0 }),
     new adapter.parameter.Parameter(userDao, { index: 1 }),
   ],
+  response: new adapter.response.Response(adapter.response.where.cookies, { name: 'user' }),
+
 });
 
 const createUserMiddleware = adapter.create(createUserInfo, {
