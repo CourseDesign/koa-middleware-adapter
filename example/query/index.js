@@ -8,7 +8,8 @@ app.use(adapter.create((query) => JSON.stringify(query), {
   parameters: [adapter.parameter.query],
 }));
 
-app.listen(4000, () => {
+const port = 4000;
+app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log('server is listening to port 4000');
+  console.log(`server is listening to port ${port}`);
 });

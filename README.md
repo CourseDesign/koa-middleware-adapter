@@ -14,8 +14,9 @@ const app = new Koa();
 
 app.use(adapter.create(() => 'Hello, World!'));
 
-app.listen(4000, () => {
-  console.log('server is listening to port 4000');
+const port = 4000;
+app.listen(port, () => {
+  console.log(`server is listening to port ${port}`);
 });
 ```
 
@@ -42,7 +43,7 @@ function signUp({ username, password }) {
   return { message: 'success' };
 }
 
-router.post('/user', adapter.create(signUp, { statusCode: 200 }));
+router.post('/user', adapter.create(signUp));
 ```
 
 ```shell
@@ -132,7 +133,6 @@ function Where(name, context, koa, node, setterAndGetter) {
   - `koaRequest` means to find the location of a parameter in `ctx.request`.
   - `nodeRequest` means to find the location of a parameter in `ctx.req`.
   - `context` means to find the location of a parameter in `ctx`.
-
 
     
 

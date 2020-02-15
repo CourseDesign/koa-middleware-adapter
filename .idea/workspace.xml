@@ -4,7 +4,7 @@
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/response.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/hello-world/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/hello-world/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,14 +181,7 @@
       <workItem from="1581586175924" duration="129000" />
       <workItem from="1581586497179" duration="10000" />
       <workItem from="1581743143564" duration="52000" />
-      <workItem from="1581747735302" duration="6407000" />
-    </task>
-    <task id="LOCAL-00017" summary="npm publish 3.0.0">
-      <created>1580968468256</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1580968468256</updated>
+      <workItem from="1581747735302" duration="6663000" />
     </task>
     <task id="LOCAL-00018" summary="npm publish 3.0.1">
       <created>1580968740940</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581754037704</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="fix readme">
+      <created>1581754426955</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1581754426955</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +539,6 @@
       <path value="$PROJECT_DIR$/lib/params-extractor" />
       <path value="$PROJECT_DIR$/lib/response-injection" />
     </ignored-roots>
-    <MESSAGE value="npm publish 3.5.4" />
     <MESSAGE value="npm publish 3.6.0" />
     <MESSAGE value="4.0.0" />
     <MESSAGE value="4.0.2" />
@@ -564,7 +563,8 @@
     <MESSAGE value="fix error and add example" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="add example" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example" />
+    <MESSAGE value="fix readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="687" key="#ESLint" timestamp="1581749954716">
@@ -583,10 +583,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581754037523">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581754426853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581754037523" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581754426853" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -663,10 +663,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581754039171">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581754428393">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581754039171" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581754428393" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
