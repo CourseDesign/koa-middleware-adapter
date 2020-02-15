@@ -6,6 +6,22 @@
 
 ​    
 
+```js
+const Koa = require('koa');
+const adapter = require('koa-middleware-adapter');
+
+const app = new Koa();
+
+app.use(adapter.create(() => 'Hello, World!'));
+
+app.listen(4000, () => {
+  console.log('server is listening to port 4000');
+});
+```
+
+​    
+
+
 ## Install
 
 ```shell

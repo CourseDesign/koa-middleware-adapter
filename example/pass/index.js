@@ -4,9 +4,7 @@ const adapter = require('../koa-middleware-adapter');
 
 const app = new Koa();
 
-app.use(adapter.create(() => '<p>Page Not Found</p>', {
-  status: 404, type: 'html',
-}));
+app.use(adapter.create((request) => JSON.stringify(request)));
 
 app.listen(4000, () => {
   // eslint-disable-next-line no-console
