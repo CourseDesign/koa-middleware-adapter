@@ -57,7 +57,7 @@ Response { statusCode: 200, body: { message: 'success'} }
 ### Convert
 
 ```js
-adapter.create(func, { parameters, response, handlers, statusCode });
+adapter.create(listener, { status, type, parameters, response, handlers });
 ```
 
 ​        
@@ -67,20 +67,13 @@ adapter.create(func, { parameters, response, handlers, statusCode });
 ```js
 function Parameter(
   where = new Where(null, true, true, true),
-  options = { name: null, combineLevel: 0, as: null, index: undefined }
+  options = {},
 ) {
   this.where = where;
-  this.name = options.name;
-  this.combineLevel = options.combineLevel;
-  this.as = options.as;
-  this.index = options.index;
-}
-
-function Where(name, koaRequest, nodeRequest, context) {
-  this.name = name;
-  this.koaRequest = koaRequest;
-  this.nodeRequest = nodeRequest;
-  this.context = context;
+  this.name = options.name || null;
+  this.as = options.as || null;
+  this.index = options.index || 0;
+  this.combineLevel = options.combineLevel || 0;
 }
 ```
 
@@ -95,11 +88,6 @@ function Where(name, koaRequest, nodeRequest, context) {
     - `1` means the imported parameter is a child of the parameter to pass.
   - `as` specifies a name when passing a parameter.
   - `index` is index of the parameter to pass.
-- Where defines where to find the parameter.
-  - `name` is the name of the location from which to retrieve the parameter.
-  - `koaRequest` means to find the location of a parameter in `ctx.request`.
-  - `nodeRequest` means to find the location of a parameter in `ctx.req`.
-  - `context` means to find the location of a parameter in `ctx`.
 
 - The default value is params, query, header, body, cookies defined.
 
@@ -108,10 +96,13 @@ function Where(name, koaRequest, nodeRequest, context) {
 ### Response
 
 ```js
-function Response({ name, where, options }) {
-  this.name = name;
+function Response(
+  where = new Where(null, true, true, true),
+  options = {},
+) {
   this.where = where;
-  this.options = options;
+  this.name = options.name || null;
+  this.type = options.type;
 }
 ```
 
@@ -124,6 +115,27 @@ function Response({ name, where, options }) {
 
 ​    
 
+### Where
+
+```js
+function Where(name, context, koa, node, setterAndGetter) {
+  this.name = name;
+  this.context = context;
+  this.koa = koa;
+  this.node = node;
+  this.setterAndGetter = setterAndGetter;
+}
+```
+
+- Where defines where to find the parameter.
+  - `name` is the name of the location from which to retrieve the parameter.
+  - `koaRequest` means to find the location of a parameter in `ctx.request`.
+  - `nodeRequest` means to find the location of a parameter in `ctx.req`.
+  - `context` means to find the location of a parameter in `ctx`.
+
+
+    
+
 ### Handlers
 
 ```js
@@ -132,16 +144,16 @@ const handlers = { extractParameterHandler, injectResponseHandler, errorHandler 
 
 ​    
 
-#### Parameter Extraction Handler
+#### Extract Parameter Handler
 
 ```js
 function extractParameterHandler(ctx, parameters) {}
 ```
 
-#### Response Injection Handler
+#### Inject Response Handler
 
 ```js
-function injectResponseHandler(ctx, result, options = {statusCode, response}) {}
+function injectResponseHandler(ctx, result, options = { response, status, type }) {}
 ```
 
 #### Error Handler
