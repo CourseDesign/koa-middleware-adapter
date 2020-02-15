@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/hello-world/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/koa-middleware-adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/extract/extract-context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/parameter/where/where.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/response/where/where.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/error/where-type-is-undefined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extract/extract-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extract/extract-parameter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-parameter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extract/extract-value.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-value.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extract/extract-where.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-inject-position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extract/find-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/find-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inject/convert-inject-position.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inject/convert-inject-position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inject/inject-response.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inject/inject-response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inject/inject-value.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inject/inject-value.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/middleware/create-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/middleware/create-middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/parameter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/parameter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/where/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/where/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/where/cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/where/cookies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/where/headers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/where/headers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/where/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/where/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/where/params.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/where/params.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parameter/where/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parameter/where/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/where/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/where/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/where/cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/where/cookies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/where/headers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/where/headers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/where/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/where/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/where/where.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/where/where.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/hello-world/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/hello-world/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,14 +169,7 @@
       <workItem from="1581586175924" duration="129000" />
       <workItem from="1581586497179" duration="10000" />
       <workItem from="1581743143564" duration="52000" />
-      <workItem from="1581747735302" duration="4344000" />
-    </task>
-    <task id="LOCAL-00012" summary="npm publish 2.0.7">
-      <created>1580888072168</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1580888072168</updated>
+      <workItem from="1581747735302" duration="4530000" />
     </task>
     <task id="LOCAL-00013" summary="npm publish 2.1.0">
       <created>1580914199047</created>
@@ -543,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581586279260</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix error and add example">
+      <created>1581752491222</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1581752491222</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +527,6 @@
       <path value="$PROJECT_DIR$/lib/params-extractor" />
       <path value="$PROJECT_DIR$/lib/response-injection" />
     </ignored-roots>
-    <MESSAGE value="npm publish 3.5.2" />
     <MESSAGE value="npm publish 3.5.3" />
     <MESSAGE value="npm publish 3.5.4" />
     <MESSAGE value="npm publish 3.6.0" />
@@ -581,7 +551,8 @@
     <MESSAGE value="change spec" />
     <MESSAGE value="fix error" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="fix error and add example" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error and add example" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="687" key="#ESLint" timestamp="1581749954716">
@@ -596,78 +567,78 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581752476597">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581752490647">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476597" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581752490647" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580436874777" />
-    <state width="1893" height="361" key="GridCell.Tab.0.bottom" timestamp="1581752476670">
+    <state width="1893" height="361" key="GridCell.Tab.0.bottom" timestamp="1581752523421">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476670" />
-    <state width="1893" height="361" key="GridCell.Tab.0.center" timestamp="1581752476669">
+    <state width="1893" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523421" />
+    <state width="1893" height="361" key="GridCell.Tab.0.center" timestamp="1581752523420">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476669" />
-    <state width="1893" height="361" key="GridCell.Tab.0.left" timestamp="1581752476668">
+    <state width="1893" height="361" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523420" />
+    <state width="1893" height="361" key="GridCell.Tab.0.left" timestamp="1581752523420">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476668" />
-    <state width="1893" height="361" key="GridCell.Tab.0.right" timestamp="1581752476670">
+    <state width="1893" height="361" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523420" />
+    <state width="1893" height="361" key="GridCell.Tab.0.right" timestamp="1581752523421">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476670" />
-    <state width="1893" height="361" key="GridCell.Tab.1.bottom" timestamp="1581752476671">
+    <state width="1893" height="361" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523421" />
+    <state width="1893" height="361" key="GridCell.Tab.1.bottom" timestamp="1581752523422">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476671" />
-    <state width="1893" height="361" key="GridCell.Tab.1.center" timestamp="1581752476671">
+    <state width="1893" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523422" />
+    <state width="1893" height="361" key="GridCell.Tab.1.center" timestamp="1581752523422">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476671" />
-    <state width="1893" height="361" key="GridCell.Tab.1.left" timestamp="1581752476670">
+    <state width="1893" height="361" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523422" />
+    <state width="1893" height="361" key="GridCell.Tab.1.left" timestamp="1581752523421">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476670" />
-    <state width="1893" height="361" key="GridCell.Tab.1.right" timestamp="1581752476671">
+    <state width="1893" height="361" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523421" />
+    <state width="1893" height="361" key="GridCell.Tab.1.right" timestamp="1581752523422">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476671" />
-    <state width="1893" height="361" key="GridCell.Tab.2.bottom" timestamp="1581752476672">
+    <state width="1893" height="361" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523422" />
+    <state width="1893" height="361" key="GridCell.Tab.2.bottom" timestamp="1581752523423">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476672" />
-    <state width="1893" height="361" key="GridCell.Tab.2.center" timestamp="1581752476671">
+    <state width="1893" height="361" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523423" />
+    <state width="1893" height="361" key="GridCell.Tab.2.center" timestamp="1581752523423">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476671" />
-    <state width="1893" height="361" key="GridCell.Tab.2.left" timestamp="1581752476671">
+    <state width="1893" height="361" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523423" />
+    <state width="1893" height="361" key="GridCell.Tab.2.left" timestamp="1581752523423">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476671" />
-    <state width="1893" height="361" key="GridCell.Tab.2.right" timestamp="1581752476672">
+    <state width="1893" height="361" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523423" />
+    <state width="1893" height="361" key="GridCell.Tab.2.right" timestamp="1581752523423">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476672" />
-    <state width="1893" height="361" key="GridCell.Tab.3.bottom" timestamp="1581752476672">
+    <state width="1893" height="361" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523423" />
+    <state width="1893" height="361" key="GridCell.Tab.3.bottom" timestamp="1581752523425">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476672" />
-    <state width="1893" height="361" key="GridCell.Tab.3.center" timestamp="1581752476672">
+    <state width="1893" height="361" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523425" />
+    <state width="1893" height="361" key="GridCell.Tab.3.center" timestamp="1581752523424">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476672" />
-    <state width="1893" height="361" key="GridCell.Tab.3.left" timestamp="1581752476672">
+    <state width="1893" height="361" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523424" />
+    <state width="1893" height="361" key="GridCell.Tab.3.left" timestamp="1581752523424">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476672" />
-    <state width="1893" height="361" key="GridCell.Tab.3.right" timestamp="1581752476672">
+    <state width="1893" height="361" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523424" />
+    <state width="1893" height="361" key="GridCell.Tab.3.right" timestamp="1581752523424">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="361" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752476672" />
+    <state width="1893" height="361" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581752523424" />
     <state x="666" y="235" width="577" height="579" key="MultipleFileMergeDialog" timestamp="1580437349627">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -676,10 +647,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581586281071">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581752492779">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581586281071" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581752492779" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -696,17 +667,5 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="212" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581577184115" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/middleware/create-middleware.js</url>
-          <line>7</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

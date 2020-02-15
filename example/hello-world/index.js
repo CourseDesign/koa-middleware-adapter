@@ -2,13 +2,9 @@
 const Koa = require('koa');
 const middlewareAdapter = require('../koa-middleware-adapter');
 
-function helloWorld() {
-  return 'Hello, World!';
-}
-
 const app = new Koa();
 
-app.use(middlewareAdapter.create(helloWorld));
+app.use(middlewareAdapter.create(() => 'Hello, World!'));
 
 app.listen(4000, () => {
   // eslint-disable-next-line no-console
