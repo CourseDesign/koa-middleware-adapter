@@ -24,7 +24,7 @@ app.listen(port, () => {
 
 ## Document
 
-- [example](https://github.com/kdPark0723/koa-middleware-adapter/example)
+- [example](https://github.com/kdPark0723/koa-middleware-adapter/tree/master/example)
 - [source](https://github.com/kdPark0723/koa-middleware-adapter)
 
 ​    
