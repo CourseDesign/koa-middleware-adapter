@@ -23,7 +23,7 @@ async function createUserInfo(user, userDao) {
 const findUserMiddleware = adapter.create(findUserInfo, {
   status: 200,
   parameters: [
-    new adapter.parameter.Parameter(adapter.parameter.where.params, { name: 'userId', index: 0 }),
+    new adapter.parameter.Parameter(adapter.parameter.where.params, { name: 'id', index: 0 }),
     new adapter.parameter.Parameter(userDao, { index: 1 }),
   ],
 });
@@ -49,7 +49,7 @@ const createUserMiddleware = adapter.create(createUserInfo, {
 
 const router = new Router();
 
-router.get('/users/:userId', findUserMiddleware);
+router.get('/users/:id', findUserMiddleware);
 router.post('/user', createUserMiddleware, findUserInContextMiddleware);
 
 const app = new Koa();

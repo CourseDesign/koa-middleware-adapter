@@ -65,7 +65,7 @@ async function createUserInfo(user, userDao) {
 const findUserMiddleware = adapter.create(findUserInfo, {
   status: 200,
   parameters: [
-    new adapter.parameter.Parameter(adapter.parameter.where.params, { name: 'userId', index: 0 }),
+    new adapter.parameter.Parameter(adapter.parameter.where.params, { name: 'id', index: 0 }),
     new adapter.parameter.Parameter(userDao, { index: 1 }),
   ],
 });
@@ -89,7 +89,7 @@ const createUserMiddleware = adapter.create(createUserInfo, {
 
 const router = new Router();
 
-router.get('/users/:userId', findUserMiddleware);
+router.get('/users/:id', findUserMiddleware);
 router.post('/user', createUserMiddleware, findUserInContextMiddleware);
 
 const app = new Koa();
@@ -107,7 +107,7 @@ app.listen(port, () => {
 
 ### Request
 
-- POST http://localhost:4000/user
+- *POST* http://localhost:4000/user
 
   ```json
   {
@@ -124,13 +124,13 @@ app.listen(port, () => {
   {
       "username": "test",
       "password": "test",
-      "id": 1
+      "id": 0
   }
   ```
 
 ### Request
 
-- GET http://localhost:4000/users/0
+- *GET* http://localhost:4000/users/0
 
 #### Response
 
@@ -140,7 +140,7 @@ app.listen(port, () => {
   {
       "username": "test",
       "password": "test",
-      "id": 1
+      "id": 0
   }
   ```
 
