@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/response/location.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inject/inject-response.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inject/inject-response.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/response/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/response/where/headers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/where/headers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,19 +56,19 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/response" />
-      <recent name="$PROJECT_DIR$/lib/parameter/where" />
-      <recent name="$PROJECT_DIR$/lib/inject" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/lib/error" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/response" />
       <recent name="$PROJECT_DIR$/lib/response/where" />
       <recent name="$PROJECT_DIR$/example/user" />
       <recent name="$PROJECT_DIR$/example" />
       <recent name="$PROJECT_DIR$/example/sign-up" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/response" />
+      <recent name="$PROJECT_DIR$/lib/parameter/where" />
+      <recent name="$PROJECT_DIR$/lib/inject" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/error" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.index.js (4)">
@@ -182,14 +184,8 @@
       <workItem from="1581743143564" duration="52000" />
       <workItem from="1581747735302" duration="6663000" />
       <workItem from="1581767734767" duration="7595000" />
-      <workItem from="1581824549526" duration="2523000" />
-    </task>
-    <task id="LOCAL-00022" summary="npm publish 3.2.2">
-      <created>1580972445124</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1580972445124</updated>
+      <workItem from="1581824549526" duration="2873000" />
+      <workItem from="1581833407266" duration="896000" />
     </task>
     <task id="LOCAL-00023" summary="npm publish 3.3.1">
       <created>1580976897299</created>
@@ -527,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581824840876</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="fix error">
+      <created>1581832687843</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1581832687843</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,10 +587,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581824839586">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581832687013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581824839586" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581832687013" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -664,10 +667,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581824842844">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581832691267">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581824842844" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581832691267" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -684,16 +687,5 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="212" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581577184115" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/inject/inject-response.js</url>
-          <line>13</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
