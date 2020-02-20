@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
+    <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="npm publish 5.0.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extract/extract-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-one.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/inject/convert-inject-position.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inject/convert-inject-position.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +186,7 @@
       <workItem from="1581833407266" duration="1274000" />
       <workItem from="1581843809904" duration="161000" />
       <workItem from="1581856289147" duration="449000" />
-      <workItem from="1582201866098" duration="425000" />
-    </task>
-    <task id="LOCAL-00025" summary="npm publish 3.3.3">
-      <created>1580981574740</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1580981574740</updated>
+      <workItem from="1582201866098" duration="693000" />
     </task>
     <task id="LOCAL-00026" summary="npm publish 3.4.0">
       <created>1580983737168</created>
@@ -531,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582202083877</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="npm publish 5.0.3">
+      <created>1582202316426</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1582202316426</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +544,6 @@
       <path value="$PROJECT_DIR$/lib/params-extractor" />
       <path value="$PROJECT_DIR$/lib/response-injection" />
     </ignored-roots>
-    <MESSAGE value="4.0.2" />
     <MESSAGE value="4.0.3" />
     <MESSAGE value="4.0.4" />
     <MESSAGE value="4.0.5" />
@@ -569,7 +568,8 @@
     <MESSAGE value="fix readme, add example" />
     <MESSAGE value="fix error" />
     <MESSAGE value="npm publish 5.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm publish 5.0.2" />
+    <MESSAGE value="npm publish 5.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm publish 5.0.3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="687" key="#ESLint" timestamp="1581749954716">
@@ -588,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1582202303302">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1582202341510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582202303302" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582202341510" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -668,14 +668,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1582202085194">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1582202317672">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1582202085194" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1582202317672" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581051684577" />
+    <state x="619" y="199" width="681" height="646" key="find.popup" timestamp="1582202503504">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="619" y="199" width="681" height="646" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582202503504" />
     <state x="577" y="303" width="756" height="444" key="git4idea.merge.GitPullDialog" timestamp="1580437373298">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
