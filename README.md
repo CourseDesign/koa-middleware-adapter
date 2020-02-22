@@ -151,7 +151,7 @@ app.listen(port, () => {
 ### Adapt
 
 ```js
-adapter.create(listener, { status, type, parameters, response, handlers });
+adapter.create(listener, { status, type, parameters, response, handlers, thisArg });
 ```
 
 ​    
@@ -255,3 +255,9 @@ function injectResponseHandler(ctx, result, options = { response, status, type }
 function errorHandler(ctx, error) {}
 ```
 
+    
+
+### thisArg
+
+- If this is exist, listener call by thisArg.
+- If this type is function, listener call by result of thisArg.
