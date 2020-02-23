@@ -116,7 +116,7 @@ app.listen(port, () => {
   }
   ```
 
-#### Response
+### Response
 
 - status: 200
 
@@ -128,11 +128,13 @@ app.listen(port, () => {
   }
   ```
 
+​    
+
 ### Request
 
 - *GET* http://localhost:4000/users/0
 
-#### Response
+### Response
 
 - status: 200
 
@@ -228,8 +230,8 @@ function Where(name, context, koa, node, setterAndGetter) {
   - `koa` means to find the location of a parameter in `ctx.request`.
   - `node` means to find the location of a parameter in `ctx.req`.
 - `setterAndGetter` means to use `set` or `get` method to extract or inject object, if `set` or `get` method is exist.
-  
-  
+
+​    
 
 ### Handlers
 
@@ -255,7 +257,7 @@ function injectResponseHandler(ctx, result, options = { response, status, type }
 function errorHandler(ctx, error) {}
 ```
 
-    
+​    
 
 ### thisArg
 
