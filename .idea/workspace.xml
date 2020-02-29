@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/util/is-exist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inject/convert-inject-position.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inject/convert-inject-position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/extract/extract-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-one.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +192,9 @@
       <workItem from="1582441208099" duration="128000" />
       <workItem from="1582457164521" duration="173000" />
       <workItem from="1582712952715" duration="369000" />
+      <workItem from="1582713965060" duration="640000" />
+      <workItem from="1582715648102" duration="35000" />
+      <workItem from="1582981367557" duration="688000" />
     </task>
     <task id="LOCAL-00029" summary="npm publish 3.5.1">
       <created>1581006803953</created>
@@ -594,10 +596,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1582441315259">
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1582713398286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582441315259" />
+    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582713398286" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -674,10 +676,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1582441318248">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1582713400006">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1582441318248" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1582713400006" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
