@@ -192,14 +192,7 @@
       <workItem from="1583560632956" duration="1509000" />
       <workItem from="1583574302957" duration="712000" />
       <workItem from="1583650327775" duration="67000" />
-      <workItem from="1587433405766" duration="655000" />
-    </task>
-    <task id="LOCAL-00031" summary="npm publish 3.5.3">
-      <created>1581046113379</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1581046113379</updated>
+      <workItem from="1587433405766" duration="1222000" />
     </task>
     <task id="LOCAL-00032" summary="npm publish 3.5.4">
       <created>1581051739005</created>
@@ -537,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583492912641</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="npm publish 5.1.7">
+      <created>1587434235273</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1587434235273</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +550,6 @@
       <path value="$PROJECT_DIR$/lib/params-extractor" />
       <path value="$PROJECT_DIR$/lib/response-injection" />
     </ignored-roots>
-    <MESSAGE value="4.1.2" />
     <MESSAGE value="4.1.3" />
     <MESSAGE value="npm publish 4.1.6" />
     <MESSAGE value="npm publish 4.2.0" />
@@ -575,7 +574,8 @@
     <MESSAGE value="npm publish 5.1.1" />
     <MESSAGE value="npm publish 5.1.4" />
     <MESSAGE value="npm publish 5.1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm publish 5.1.5" />
+    <MESSAGE value="npm publish 5.1.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm publish 5.1.7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="687" key="#ESLint" timestamp="1581749954716">
@@ -594,10 +594,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="685" y="251" width="839" height="829" key="CommitChangelistDialog2" timestamp="1583492912044">
+    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2" timestamp="1587434234938">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="685" y="251" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583492912044" />
+    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434234938" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1583650392319">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -674,10 +674,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1583492914928">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587434236576">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583492914928" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434236576" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
