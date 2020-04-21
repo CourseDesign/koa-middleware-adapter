@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/extract/extract-value.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extract/extract-value.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/middleware/create-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/middleware/create-middleware.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +192,8 @@
       <workItem from="1583560632956" duration="1509000" />
       <workItem from="1583574302957" duration="712000" />
       <workItem from="1583650327775" duration="67000" />
-      <workItem from="1587433405766" duration="1222000" />
-    </task>
-    <task id="LOCAL-00032" summary="npm publish 3.5.4">
-      <created>1581051739005</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1581051739005</updated>
+      <workItem from="1587433405766" duration="1943000" />
+      <workItem from="1587436813765" duration="40000" />
     </task>
     <task id="LOCAL-00033" summary="npm publish 3.6.0">
       <created>1581078110868</created>
@@ -537,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587434235273</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="npm publish 5.1.7">
+      <created>1587434799564</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1587434799564</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,10 +595,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2" timestamp="1587434234938">
+    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2" timestamp="1587434799402">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434234938" />
+    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434799402" />
     <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1583650392319">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -674,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587434236576">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587434800615">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434236576" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434800615" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
