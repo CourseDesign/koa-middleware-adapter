@@ -24,7 +24,7 @@ app.listen(port, () => {
 
 ## Document
 
-- [example](https://github.com/kdPark0723/koa-middleware-adapter/example)
+- [example](https://github.com/kdPark0723/koa-middleware-adapter/tree/master/example)
 - [source](https://github.com/kdPark0723/koa-middleware-adapter)
 
 ​    
@@ -116,7 +116,7 @@ app.listen(port, () => {
   }
   ```
 
-#### Response
+### Response
 
 - status: 200
 
@@ -128,11 +128,13 @@ app.listen(port, () => {
   }
   ```
 
+​    
+
 ### Request
 
 - *GET* http://localhost:4000/users/0
 
-#### Response
+### Response
 
 - status: 200
 
@@ -151,7 +153,7 @@ app.listen(port, () => {
 ### Adapt
 
 ```js
-adapter.create(listener, { status, type, parameters, response, handlers });
+adapter.create(listener, { status, type, parameters, response, handlers, thisArg });
 ```
 
 ​    
@@ -228,8 +230,8 @@ function Where(name, context, koa, node, setterAndGetter) {
   - `koa` means to find the location of a parameter in `ctx.request`.
   - `node` means to find the location of a parameter in `ctx.req`.
 - `setterAndGetter` means to use `set` or `get` method to extract or inject object, if `set` or `get` method is exist.
-  
-  
+
+​    
 
 ### Handlers
 
@@ -255,3 +257,9 @@ function injectResponseHandler(ctx, result, options = { response, status, type }
 function errorHandler(ctx, error) {}
 ```
 
+​    
+
+### thisArg
+
+- If this is exist, listener call by thisArg.
+- If this type is function, listener call by result of thisArg.

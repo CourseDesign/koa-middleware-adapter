@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97e877-b68b-4b46-824d-1bafb682524f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/response/location.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/response/where/headers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/response/where/headers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/middleware/create-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/middleware/create-middleware.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -41,7 +38,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.15.0" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/response" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,13 +53,6 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/response" />
-      <recent name="$PROJECT_DIR$/lib/response/where" />
-      <recent name="$PROJECT_DIR$/example/user" />
-      <recent name="$PROJECT_DIR$/example" />
-      <recent name="$PROJECT_DIR$/example/sign-up" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/response" />
       <recent name="$PROJECT_DIR$/lib/parameter/where" />
@@ -70,8 +60,15 @@
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/error" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/util" />
+      <recent name="$PROJECT_DIR$/lib/response" />
+      <recent name="$PROJECT_DIR$/lib/response/where" />
+      <recent name="$PROJECT_DIR$/example/user" />
+      <recent name="$PROJECT_DIR$/example" />
+    </key>
   </component>
-  <component name="RunManager" selected="Node.js.index.js (4)">
+  <component name="RunManager" selected="Node.js.test.js">
     <configuration name="index.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/example/404/index.js" working-dir="$PROJECT_DIR$/example/404">
       <method v="2" />
     </configuration>
@@ -99,18 +96,6 @@
         <item itemvalue="Node.js.index.js (1)" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -185,77 +170,30 @@
       <workItem from="1581747735302" duration="6663000" />
       <workItem from="1581767734767" duration="7595000" />
       <workItem from="1581824549526" duration="2873000" />
-      <workItem from="1581833407266" duration="896000" />
-    </task>
-    <task id="LOCAL-00023" summary="npm publish 3.3.1">
-      <created>1580976897299</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1580976897299</updated>
-    </task>
-    <task id="LOCAL-00024" summary="npm publish 3.3.2">
-      <created>1580979893658</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1580979893658</updated>
-    </task>
-    <task id="LOCAL-00025" summary="npm publish 3.3.3">
-      <created>1580981574740</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1580981574740</updated>
-    </task>
-    <task id="LOCAL-00026" summary="npm publish 3.4.0">
-      <created>1580983737168</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1580983737168</updated>
-    </task>
-    <task id="LOCAL-00027" summary="npm publish 3.4.1">
-      <created>1580986757131</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1580986757131</updated>
-    </task>
-    <task id="LOCAL-00028" summary="npm publish 3.5.0">
-      <created>1581004955638</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1581004955638</updated>
-    </task>
-    <task id="LOCAL-00029" summary="npm publish 3.5.1">
-      <created>1581006803953</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1581006803953</updated>
-    </task>
-    <task id="LOCAL-00030" summary="npm publish 3.5.2">
-      <created>1581007494769</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1581007494769</updated>
-    </task>
-    <task id="LOCAL-00031" summary="npm publish 3.5.3">
-      <created>1581046113379</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1581046113379</updated>
-    </task>
-    <task id="LOCAL-00032" summary="npm publish 3.5.4">
-      <created>1581051739005</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1581051739005</updated>
+      <workItem from="1581833407266" duration="1274000" />
+      <workItem from="1581843809904" duration="161000" />
+      <workItem from="1581856289147" duration="449000" />
+      <workItem from="1582201866098" duration="2109000" />
+      <workItem from="1582370991951" duration="869000" />
+      <workItem from="1582385757900" duration="42000" />
+      <workItem from="1582441208099" duration="128000" />
+      <workItem from="1582457164521" duration="173000" />
+      <workItem from="1582712952715" duration="369000" />
+      <workItem from="1582713965060" duration="640000" />
+      <workItem from="1582715648102" duration="35000" />
+      <workItem from="1582981367557" duration="688000" />
+      <workItem from="1583025239694" duration="1439000" />
+      <workItem from="1583038835718" duration="380000" />
+      <workItem from="1583040858184" duration="8000" />
+      <workItem from="1583202941223" duration="215000" />
+      <workItem from="1583205267117" duration="732000" />
+      <workItem from="1583492861026" duration="65000" />
+      <workItem from="1583492991774" duration="645000" />
+      <workItem from="1583560632956" duration="1509000" />
+      <workItem from="1583574302957" duration="712000" />
+      <workItem from="1583650327775" duration="67000" />
+      <workItem from="1587433405766" duration="1943000" />
+      <workItem from="1587436813765" duration="40000" />
     </task>
     <task id="LOCAL-00033" summary="npm publish 3.6.0">
       <created>1581078110868</created>
@@ -530,11 +468,81 @@
       <option name="project" value="LOCAL" />
       <updated>1581832687843</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="fix error">
+      <created>1581834334133</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1581834334134</updated>
+    </task>
+    <task id="LOCAL-00073" summary="npm publish 5.0.2">
+      <created>1582202083876</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1582202083877</updated>
+    </task>
+    <task id="LOCAL-00074" summary="npm publish 5.0.3">
+      <created>1582202316426</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1582202316426</updated>
+    </task>
+    <task id="LOCAL-00075" summary="npm publish 5.0.4">
+      <created>1582202618035</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1582202618035</updated>
+    </task>
+    <task id="LOCAL-00076" summary="npm publish 5.1.0">
+      <created>1582371702265</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1582371702266</updated>
+    </task>
+    <task id="LOCAL-00077" summary="npm publish 5.1.1">
+      <created>1582441316312</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1582441316312</updated>
+    </task>
+    <task id="LOCAL-00078" summary="npm publish 5.1.4">
+      <created>1583028738251</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1583028738252</updated>
+    </task>
+    <task id="LOCAL-00079" summary="npm publish 5.1.5">
+      <created>1583492912640</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1583492912641</updated>
+    </task>
+    <task id="LOCAL-00080" summary="npm publish 5.1.7">
+      <created>1587434235273</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1587434235273</updated>
+    </task>
+    <task id="LOCAL-00081" summary="npm publish 5.1.7">
+      <created>1587434799564</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1587434799564</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -543,14 +551,6 @@
       <path value="$PROJECT_DIR$/lib/params-extractor" />
       <path value="$PROJECT_DIR$/lib/response-injection" />
     </ignored-roots>
-    <MESSAGE value="4.0.0" />
-    <MESSAGE value="4.0.2" />
-    <MESSAGE value="4.0.3" />
-    <MESSAGE value="4.0.4" />
-    <MESSAGE value="4.0.5" />
-    <MESSAGE value="4.1.0" />
-    <MESSAGE value="4.1.1" />
-    <MESSAGE value="4.1.2" />
     <MESSAGE value="4.1.3" />
     <MESSAGE value="npm publish 4.1.6" />
     <MESSAGE value="npm publish 4.2.0" />
@@ -568,7 +568,15 @@
     <MESSAGE value="fix readme" />
     <MESSAGE value="fix readme, add example" />
     <MESSAGE value="fix error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error" />
+    <MESSAGE value="npm publish 5.0.2" />
+    <MESSAGE value="npm publish 5.0.3" />
+    <MESSAGE value="npm publish 5.0.4" />
+    <MESSAGE value="npm publish 5.1.0" />
+    <MESSAGE value="npm publish 5.1.1" />
+    <MESSAGE value="npm publish 5.1.4" />
+    <MESSAGE value="npm publish 5.1.5" />
+    <MESSAGE value="npm publish 5.1.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm publish 5.1.7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="800" height="687" key="#ESLint" timestamp="1581749954716">
@@ -587,14 +595,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="217" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1580380741821" />
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2" timestamp="1581832687013">
+    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2" timestamp="1587434799402">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="39" width="839" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581832687013" />
-    <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1580436874777">
+    <state x="685" y="251" width="890" height="829" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434799402" />
+    <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl" timestamp="1583650392319">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580436874777" />
+    <state x="743" y="280" width="424" height="489" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583650392319" />
     <state width="1893" height="361" key="GridCell.Tab.0.bottom" timestamp="1581774762569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -667,14 +675,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="163" width="1022" height="735" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581576184381" />
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1581832691267">
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587434800615">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581832691267" />
+    <state x="555" y="262" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1587434800615" />
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581051684577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="733" y="438" width="453" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581051684577" />
+    <state x="619" y="199" width="681" height="646" key="find.popup" timestamp="1582202503504">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="619" y="199" width="681" height="646" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582202503504" />
     <state x="577" y="303" width="756" height="444" key="git4idea.merge.GitPullDialog" timestamp="1580437373298">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
