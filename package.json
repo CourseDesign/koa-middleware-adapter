@@ -2,9 +2,11 @@
   "name": "koa-middleware-adapter",
   "version": "5.2.0",
   "description": "Functions and promises can be used as middleware in koa.",
-  "main": "lib",
+  "main": "dist",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
     "koa",
@@ -29,6 +31,7 @@
     "eslint-plugin-import": "^2.20.1",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^8.0.8"
+    "koa-router": "^8.0.8",
+    "typescript": "^3.4.3"
   }
 }
