@@ -1,3 +1,3 @@
-import { ParameterWhere } from './where';
+import ParameterWhere from './where';
 
-export const cookies = new ParameterWhere('cookies', true, false, false);
+export default new ParameterWhere('cookies', true, false, false);

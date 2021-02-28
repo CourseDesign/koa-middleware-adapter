@@ -1,4 +1,4 @@
-import { body as whereBody } from './where';
-import { Parameter } from './parameter';
+import { body } from './where';
+import Parameter from './parameter';
 
-export const body = new Parameter(whereBody);
+export default new Parameter(body);

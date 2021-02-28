@@ -1,4 +1,4 @@
-import { query as whereQuery } from './where';
-import { Parameter } from './parameter';
+import { query } from './where';
+import Parameter from './parameter';
 
-export const query = new Parameter(whereQuery);
+export default new Parameter(query);

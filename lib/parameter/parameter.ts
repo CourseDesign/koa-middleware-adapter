@@ -1,6 +1,6 @@
 import { Where } from './where';
 
-export class Parameter {
+export default class Parameter {
   name: string | null;
   as: string | null;
   index: number;

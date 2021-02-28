@@ -1,3 +1,3 @@
-import { ParameterWhere } from './where';
+import ParameterWhere from './where';
 
-export const query = new ParameterWhere('query', true, true, false);
+export default new ParameterWhere('query', true, true, false);

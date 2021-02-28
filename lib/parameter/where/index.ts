@@ -1,6 +1,6 @@
-export { ParameterWhere as Where } from './where';
-export { headers } from './headers';
-export { params } from './params';
-export { query } from './query';
-export { body } from './body';
-export { cookies } from './cookies';
+export { default as Where } from './where';
+export { default as headers } from './headers';
+export { default as params } from './params';
+export { default as query } from './query';
+export { default as body } from './body';
+export { default as cookies } from './cookies';
