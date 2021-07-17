@@ -25,6 +25,7 @@
     "email": "kdpark023@gmail.com"
   },
   "devDependencies": {
+    "@types/koa": "^2.13.4",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-import-resolver-node": "^0.3.3",
