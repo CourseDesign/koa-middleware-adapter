@@ -1,7 +1,17 @@
-const defaultHandler = require('../handler');
-const callListener = require('../listener/call-listener');
+import { Middleware } from 'koa';
+import callListener from '../listener/call-listener';
+import defaultHandler from '../handler';
 
-function createMiddleware(listener, options = {}) {
+type CreateMiddlewareOptions = {
+  handlers?: object;
+  parameters?: object;
+  response?: object;
+  thisArg?: any;
+  type?: any;
+  status?: number;
+};
+
+export default function createMiddleware(listener: Function, options: CreateMiddlewareOptions = {}): Middleware {
   const localHandler = { ...defaultHandler, ...options.handlers || {} };
 
   return async (ctx, next) => {
@@ -22,5 +32,3 @@ function createMiddleware(listener, options = {}) {
     if (success) await next();
   };
 }
-
-module.exports = createMiddleware;
