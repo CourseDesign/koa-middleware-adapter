@@ -7,7 +7,7 @@ export default class Parameter {
   combineLevel: number;
 
   constructor(
-    public readonly where = new Where(null, true, true, true),
+    public readonly where: Where | unknown = new Where(null, true, true, true),
     options?: {
       name?: string,
       as?: string,

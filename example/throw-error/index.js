@@ -4,9 +4,19 @@ const adapter = require('../koa-middleware-adapter');
 
 const app = new Koa();
 
-app.use(adapter.create(() => {
+const middleware = adapter.create(() => {
   throw new adapter.Forbidden();
-}));
+}, {
+  handlers: {
+    errorHandler: true,
+  },
+});
+
+app.use(middleware);
+
+app.onerror = (err) => {
+  console.log('something wrong', err);
+};
 
 const port = 4000;
 app.listen(port, () => {
