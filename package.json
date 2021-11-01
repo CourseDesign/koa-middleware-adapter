@@ -1,9 +1,12 @@
 {
   "name": "koa-middleware-adapter",
-  "version": "5.2.3",
+  "version": "5.2.4",
   "description": "Functions and promises can be used as middleware in koa.",
-  "main": "dist",
-  "typings": "dist/index.d.ts",
+  "main": "./lib/index.js",
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts"
+  },
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "build": "tsc"
@@ -24,13 +27,15 @@
     "url": "https://github.com/kdPark0723/koa-middleware-adapter/issues",
     "email": "kdpark023@gmail.com"
   },
+  "peerDependencies": {
+    "koa": "^2.11.0",
+    "@types/koa": "^2.13.4"
+  },
   "devDependencies": {
-    "@types/koa": "^2.13.4",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-import": "^2.20.1",
-    "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^8.0.8",
     "typescript": "^3.4.3"
