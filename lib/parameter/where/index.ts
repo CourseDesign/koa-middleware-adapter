@@ -4,3 +4,4 @@ export { default as params } from './params';
 export { default as query } from './query';
 export { default as body } from './body';
 export { default as cookies } from './cookies';
+export { default as context } from './context';
