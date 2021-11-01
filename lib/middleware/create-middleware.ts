@@ -1,9 +1,15 @@
 import { Middleware } from 'koa';
 import callListener from '../listener/call-listener';
 import defaultHandler from '../handler';
+import errorHandler from "../handler/error-handler";
 
 type CreateMiddlewareOptions = {
-  handlers?: object;
+  handlers?: {
+    extractParameterHandler: typeof defaultHandler.extractParameterHandler,
+    injectResponseHandler: typeof defaultHandler.injectResponseHandler,
+    errorHandler?: typeof errorHandler | true,
+    [key: string]: unknown,
+  };
   parameters?: object;
   response?: object;
   thisArg?: any;
@@ -15,7 +21,6 @@ export default function createMiddleware(listener: Function, options: CreateMidd
   const localHandler = { ...defaultHandler, ...options.handlers || {} };
 
   return async (ctx, next) => {
-    let success = false;
     try {
       const extractedParameters = await localHandler.extractParameterHandler(
         ctx, options.parameters,
@@ -24,11 +29,24 @@ export default function createMiddleware(listener: Function, options: CreateMidd
       await localHandler.injectResponseHandler(ctx, result, {
         response: options.response, status: options.status, type: options.type,
       });
-      success = true;
     } catch (error) {
-      await localHandler.errorHandler(ctx, error);
+      /*
+      errorHandler === true, use default handler
+      errorHandler === Function, use given handler
+      errorHandler === null, throw the error
+     */
+
+      if (options.handlers?.errorHandler == null) {
+        throw error;
+      }
+
+      if (typeof options.handlers.errorHandler === 'function') {
+        await options.handlers.errorHandler(ctx, error);
+      } else if (typeof options.handlers.errorHandler === 'boolean' && options.handlers.errorHandler) {
+        await errorHandler(ctx, error);
+      }
     }
 
-    if (success) await next();
+    await next();
   };
 }
