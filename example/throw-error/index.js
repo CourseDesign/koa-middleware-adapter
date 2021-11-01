@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const Koa = require('koa');
-const adapter = require('../koa-middleware-adapter').default;
+const adapter = require('../koa-middleware-adapter');
 
 const app = new Koa();
 
