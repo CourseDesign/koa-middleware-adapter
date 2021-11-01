@@ -36,14 +36,12 @@ export default function createMiddleware(listener: Function, options: CreateMidd
       errorHandler === null, throw the error
      */
 
-      if (options.handlers?.errorHandler == null) {
-        throw error;
-      }
-
-      if (typeof options.handlers.errorHandler === 'function') {
+      if (typeof options?.handlers?.errorHandler === 'function') {
         await options.handlers.errorHandler(ctx, error);
-      } else if (typeof options.handlers.errorHandler === 'boolean' && options.handlers.errorHandler) {
+      } else if (typeof options?.handlers?.errorHandler === 'boolean' && options.handlers.errorHandler) {
         await errorHandler(ctx, error);
+      } else {
+        throw error;
       }
     }
 
