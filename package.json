@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "eslint": "^7.15.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-import": "^2.20.1",
     "koa-bodyparser": "^4.2.1",
