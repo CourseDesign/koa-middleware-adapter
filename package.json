@@ -38,7 +38,7 @@
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-import": "^2.20.1",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^8.0.8",
+    "koa-router": "^12.0.0",
     "typescript": "^3.4.3"
   }
 }
